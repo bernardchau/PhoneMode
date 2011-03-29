@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, PhoneMode!</string>
+    <string name="app_name">PhoneMode</string>
+    <string name="no_profiles">No profiles yet\nClick menu to create profile</string>
+    <string name="menu_insert">Create Profile</string>
+    <string name="menu_delete">Delete Profile</string>
+    <string name="menu_about">About</string>
+    <string name="menu_edit">Edit Profile</string>
+    <string name="about_content">Developed by Bernard Chau\nbernard.chl1216@gmail.com</string>
+</resources>

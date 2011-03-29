@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true">
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+	
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Profile name: " />
+			<EditText
+				android:id="@+id/txtName"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" />
+		</LinearLayout>
+		
+		<View
+	        android:layout_height="2dp"
+	        android:layout_width="fill_parent"
+	        android:background="#FF909090" />
+
+		<CheckBox
+			android:id="@+id/cbxBright"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:checked="false"
+			android:text="Brightness" />			
+		<SeekBar
+			android:id="@+id/skbBright"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp"
+			android:max="254"
+			android:progress="127" 
+			android:visibility="gone"/>
+		
+		<View
+	        android:layout_height="2dp"
+	        android:layout_width="fill_parent"
+	        android:background="#FF909090" />
+
+		<CheckBox
+			android:id="@+id/cbxBlue"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:checked="false"
+			android:text="BlueTooth" 
+	        android:visibility="gone"/>
+		<RadioGroup
+			android:visibility="gone"
+			android:id="@+id/rdoBlue"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp">
+			<RadioButton
+				android:id="@+id/rdoBlueOn"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="On" 
+				android:checked="true"/>
+			<RadioButton
+				android:id="@+id/rdoBlueOff"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Off" />
+		</RadioGroup>
+	        
+	    <View
+	        android:layout_height="2dp"
+	        android:layout_width="fill_parent"
+	        android:background="#FF909090" 
+	        android:visibility="gone"/>
+
+		<CheckBox
+			android:id="@+id/cbxWifi"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:checked="false"
+			android:text="WiFi" />
+		<RadioGroup
+			android:visibility="gone"
+			android:id="@+id/rdoWifi"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp">
+			<RadioButton
+				android:id="@+id/rdoWifiOn"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="On"
+				android:checked="true"/>
+				
+			<RadioButton
+				android:id="@+id/rdoWifiOff"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Off" />
+		</RadioGroup>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+		<Button
+			android:id="@+id/btnSave"
+			android:text="Save"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" 
+			android:onClick="btnSaveOnClick"/>
+		<Button
+			android:id="@+id/btnDiscard"
+			android:text="Do not save"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="btnDiscardOnClick" />
+				
+	</LinearLayout> 
+</RelativeLayout>
